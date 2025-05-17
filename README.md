@@ -21,10 +21,12 @@ This repository includes all the notebooks, datasets and scripts used in AIM825 
 - `llava-baseline-evaluation.ipynb`: Baseline evaluation on non fine-tuned LLaVA model.
 
 ### └── Dataset Curation
-- `data-curation-2.ipynb`:
-- `df_manipulation_split.ipynb`:
-- `gemini-structured-output.ipynb`:
-- `vr-json2df.ipynb`:
+The scripts are written in this order:
+- `vr-json2df.ipynb`: Parses raw ABO listings JSON files, extracts relevant metadata fields, merges with image info, and outputs a clean CSV of complete listing metadata.  
+- `gemini-structured-output.ipynb`: Uses Google’s Gemini API to generate structured question–answer pairs for each image based on visual content and metadata, exporting a curated VQA dataset.  
+- `data-curation-2.ipynb`: Assigns richness scores to listings based on metadata completeness, filters low-information items, and samples a balanced, diverse subset across product categories.  
+- `df_manipulation_split.ipynb`: Merges QA pairs with image paths, constructs full file references, and performs a group-aware 80/10/10 train/val/test split by image ID.  
+
  
 ### └── Fine Tuning with LoRA
 - `vrmp2-blip-fine-tuning.ipynb`: Fine-Tuning BLIP model using LoRA
