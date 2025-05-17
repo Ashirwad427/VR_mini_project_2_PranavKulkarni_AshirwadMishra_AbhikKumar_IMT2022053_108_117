@@ -19,6 +19,8 @@ This repository includes all the notebooks, datasets and scripts used in AIM825 
 
 ### └── Baseline Evaluation
 - `llava-baseline-evaluation.ipynb`: Baseline evaluation on non fine-tuned LLaVA model.
+- `blip-baseline-model-inference.ipynb`: Baseline evaluation on non fine-tuned BLIP VQA model.
+- `paligemma-baseline-model-inference.ipynb`: Baseline evaluation on non fine-tuned PaliGemma model.
 
 ### └── Dataset Curation
 The scripts are written in this order:
